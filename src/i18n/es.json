@@ -77,5 +77,10 @@
     "eventAdded": "Evento añadido",
     "eventSaved": "Cambios guardados",
     "eventDeleted": "Evento eliminado"
+  },
+  "footer": {
+    "madeWith": "Hecho con amor",
+    "by": "por",
+    "inspiredBy": "Inspirado por"
   }
 }

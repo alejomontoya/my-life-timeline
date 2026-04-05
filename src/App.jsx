@@ -20,11 +20,14 @@ export default function LifeTimeline() {
   const { t } = useTranslation();
   const { modalState, confirm } = useConfirm();
   const { toastState, showToast, hideToast } = useToast();
-  
+
   const [yearStart, setYearStart] = useState(2000);
   const [yearEnd, setYearEnd] = useState(2026);
   const [events, setEvents] = useLocalStorage("lifeTimelineEvents", {});
-  const [categories, setCategories] = useLocalStorage("lifeTimelineCategories", []);
+  const [categories, setCategories] = useLocalStorage(
+    "lifeTimelineCategories",
+    []
+  );
   const [modal, setModal] = useState(null);
   const [configOpen, setConfigOpen] = useState(false);
   const [pdfExportOpen, setPdfExportOpen] = useState(false);
@@ -71,7 +74,7 @@ export default function LifeTimeline() {
       confirmText: t("confirm.delete"),
       cancelText: t("confirm.cancel"),
     });
-    
+
     if (result) {
       setEvents({});
       setCategories([]);
@@ -91,10 +94,14 @@ export default function LifeTimeline() {
       });
       if (!result) return;
     }
-    
+
     try {
       const lang = i18n.language;
-      const response = await fetch(`${import.meta.env.BASE_URL}${lang === "en" ? "example" : "ejemplo"}.json`);
+      const response = await fetch(
+        `${import.meta.env.BASE_URL}${
+          lang === "en" ? "example" : "ejemplo"
+        }.json`
+      );
       const data = await response.json();
       setYearStart(data.yearStart);
       setYearEnd(data.yearEnd);
@@ -177,7 +184,11 @@ export default function LifeTimeline() {
       <Legend categories={categories} />
 
       {total === 0 ? (
-        <EmptyState onLoadExample={loadExample} onOpenAdd={openAdd} yearStart={yearStart} />
+        <EmptyState
+          onLoadExample={loadExample}
+          onOpenAdd={openAdd}
+          yearStart={yearStart}
+        />
       ) : (
         <Timeline
           yearStart={yearStart}
@@ -189,6 +200,30 @@ export default function LifeTimeline() {
           onDelete={deleteEvent}
         />
       )}
+
+      <footer className="lt-footer">
+        <p>
+          {t("footer.madeWith")} <span className="heart">♥</span>{" "}
+          {t("footer.by")}{" "}
+          <a
+            href="https://github.com/alejomontoya"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Alejandro Pinto
+          </a>
+        </p>
+        <p className="inspiration">
+          {t("footer.inspiredBy")}{" "}
+          <a
+            href="https://www.instagram.com/psicopaulapolo/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Psicóloga Maria Paula Polo
+          </a>
+        </p>
+      </footer>
 
       <EventModal
         modal={modal}

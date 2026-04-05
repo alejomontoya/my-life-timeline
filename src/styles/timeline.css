@@ -1957,3 +1957,35 @@
     width: 70px;
   }
 }
+
+/* ── Footer ── */
+.lt-footer {
+  text-align: center;
+  padding: 40px 20px 20px;
+  color: #9a9690;
+  font-size: 13px;
+}
+
+.lt-footer p {
+  margin: 4px 0;
+}
+
+.lt-footer .heart {
+  color: #e54d2e;
+}
+
+.lt-footer .inspiration {
+  font-size: 12px;
+  color: #b0aca5;
+}
+
+.lt-footer a {
+  color: #5a5650;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.lt-footer a:hover {
+  color: #1a1915;
+  text-decoration: underline;
+}
