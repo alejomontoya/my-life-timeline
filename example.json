@@ -1,0 +1,117 @@
+{
+  "yearStart": 1990,
+  "yearEnd": 2030,
+  "categories": [
+    {
+      "id": "c1",
+      "name": "Personal",
+      "bg": "rgba(140, 109, 63, 0.18)",
+      "border": "#8c6d3f",
+      "text": "#8c6d3f"
+    },
+    {
+      "id": "c2",
+      "name": "Education",
+      "bg": "rgba(58, 172, 110, 0.18)",
+      "border": "#3aac6e",
+      "text": "#165e36"
+    },
+    {
+      "id": "c3",
+      "name": "Work",
+      "bg": "rgba(58, 128, 212, 0.18)",
+      "border": "#3a80d4",
+      "text": "#0d3e7a"
+    },
+    {
+      "id": "c4",
+      "name": "Travel",
+      "bg": "rgba(108, 116, 212, 0.18)",
+      "border": "#6c74d4",
+      "text": "#2d3480"
+    },
+    {
+      "id": "c5",
+      "name": "Health",
+      "bg": "rgba(212, 64, 64, 0.18)",
+      "border": "#d44040",
+      "text": "#7a1010"
+    }
+  ],
+  "events": {
+    "1990": [
+      { "text": "Born in March", "catId": "c1" }
+    ],
+    "1995": [
+      { "text": "Started school", "catId": "c2" }
+    ],
+    "2000": [
+      { "text": "Learned to ride a bike", "catId": "c1" },
+      { "text": "Family beach vacation", "catId": "c4" }
+    ],
+    "2005": [
+      { "text": "Got my first mobile phone", "catId": "c1" }
+    ],
+    "2008": [
+      { "text": "High school graduation", "catId": "c2" },
+      { "text": "Graduation trip", "catId": "c4" }
+    ],
+    "2009": [
+      { "text": "Started university", "catId": "c2" },
+      { "text": "Major: Engineering", "catId": "c2" }
+    ],
+    "2010": [
+      { "text": "First part-time job", "catId": "c3" }
+    ],
+    "2013": [
+      { "text": "University graduation", "catId": "c2" },
+      { "text": "My first car", "catId": "c1" }
+    ],
+    "2014": [
+      { "text": "First formal job", "catId": "c3" }
+    ],
+    "2015": [
+      { "text": "Trip to Europe", "catId": "c4" },
+      { "text": "Visited 5 countries", "catId": "c4" }
+    ],
+    "2016": [
+      { "text": "Promotion at work", "catId": "c3" },
+      { "text": "Moved to an apartment", "catId": "c1" }
+    ],
+    "2017": [
+      { "text": "Started exercising", "catId": "c5" }
+    ],
+    "2018": [
+      { "text": "Trip to Japan", "catId": "c4" },
+      { "text": "Tech conference", "catId": "c2" }
+    ],
+    "2019": [
+      { "text": "Professional certification", "catId": "c2" },
+      { "text": "New role as team lead", "catId": "c3" }
+    ],
+    "2020": [
+      { "text": "COVID-19 pandemic", "catId": "c5" },
+      { "text": "Remote work", "catId": "c3" }
+    ],
+    "2021": [
+      { "text": "COVID vaccine", "catId": "c5" },
+      { "text": "Important project at work", "catId": "c3" }
+    ],
+    "2022": [
+      { "text": "Trip to United States", "catId": "c4" },
+      { "text": "In-person meetings resume", "catId": "c3" }
+    ],
+    "2023": [
+      { "text": "Bought a house", "catId": "c1" },
+      { "text": "Best performance award", "catId": "c3" }
+    ],
+    "2024": [
+      { "text": "Launched personal project", "catId": "c3" },
+      { "text": "Completed marathon", "catId": "c5" }
+    ],
+    "2025": [
+      { "text": "Around the world trip", "catId": "c4" },
+      { "text": "Savings goal achieved", "catId": "c1" }
+    ]
+  }
+}
