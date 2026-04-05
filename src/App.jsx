@@ -94,7 +94,7 @@ export default function LifeTimeline() {
     
     try {
       const lang = i18n.language;
-      const response = await fetch(`/${lang === "en" ? "example" : "ejemplo"}.json`);
+      const response = await fetch(`${import.meta.env.BASE_URL}${lang === "en" ? "example" : "ejemplo"}.json`);
       const data = await response.json();
       setYearStart(data.yearStart);
       setYearEnd(data.yearEnd);
