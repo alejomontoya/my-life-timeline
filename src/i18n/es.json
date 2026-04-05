@@ -1,0 +1,81 @@
+{
+  "app": {
+    "title": "Mi línea de vida",
+    "subtitleNoEvents": "{{start}} – {{end}} · Haz clic en + para comenzar",
+    "event_one": "{{count}} evento",
+    "event_other": "{{count}} eventos",
+    "subtitleWithEvents": "{{count}} · {{start}} – {{end}}"
+  },
+  "header": {
+    "yearRange": "Rango",
+    "actions": "Acciones",
+    "export": "Exportar",
+    "exportPDF": "Exportar a PDF",
+    "exportData": "Exportar datos",
+    "import": "Importar datos",
+    "importData": "Importar datos",
+    "seeExample": "Ver ejemplo",
+    "clearAll": "Borrar todo",
+    "language": "Idioma"
+  },
+  "config": {
+    "title": "Rango de años",
+    "from": "Desde",
+    "to": "Hasta",
+    "cancel": "Cancelar",
+    "apply": "Aplicar"
+  },
+  "modal": {
+    "newEvent": "Nuevo evento",
+    "editEvent": "Editar evento",
+    "eventPlaceholder": "¿Qué ocurrió este año?",
+    "category": "Categoría",
+    "noCategory": "Sin categoría",
+    "newCategory": "Nueva categoría…",
+    "create": "Crear",
+    "cancel": "Cancelar",
+    "addEvent": "Añadir evento",
+    "save": "Guardar"
+  },
+  "empty": {
+    "title": "Tu línea de vida te espera",
+    "text": "Comienza a registrar los momentos importantes de tu vida.\nCada evento es un punto en tu historia personal.",
+    "addFirst": "Añadir mi primer evento",
+    "seeExample": "Ver ejemplo",
+    "hint": "O haz clic en cualquier botón + en la línea de tiempo"
+  },
+  "pdf": {
+    "title": "Exportar a PDF",
+    "subtitle": "8 años por página en formato vertical",
+    "preview": "Vista previa",
+    "cancel": "Cancelar",
+    "export": "Descargar PDF",
+    "exporting": "Exportando..."
+  },
+  "legend": {
+    "categories": "Categorías:"
+  },
+  "confirm": {
+    "clearAll": "¿Eliminar toda la línea de vida?",
+    "clearAllTitle": "Borrar todo",
+    "clearAllMessage": "¿Estás seguro de que quieres eliminar todos tus datos? Esta acción no se puede deshacer.",
+    "replaceData": "Esto reemplazará tus datos actuales. ¿Continuar?",
+    "loadExampleTitle": "Cargar ejemplo",
+    "loadExampleMessage": "Se reemplazarán tus datos actuales con el ejemplo. ¿Continuar?",
+    "invalidJSON": "JSON inválido",
+    "loadError": "No se pudo cargar el ejemplo",
+    "cancel": "Cancelar",
+    "delete": "Eliminar",
+    "continue": "Continuar",
+    "accept": "Aceptar"
+  },
+  "toast": {
+    "pdfError": "Error al exportar PDF",
+    "importSuccess": "Datos importados correctamente",
+    "exampleLoaded": "Ejemplo cargado correctamente",
+    "categoryExists": "Ya existe una categoría con ese nombre",
+    "eventAdded": "Evento añadido",
+    "eventSaved": "Cambios guardados",
+    "eventDeleted": "Evento eliminado"
+  }
+}

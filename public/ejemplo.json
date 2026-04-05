@@ -1,0 +1,117 @@
+{
+  "yearStart": 1990,
+  "yearEnd": 2030,
+  "categories": [
+    {
+      "id": "c1",
+      "name": "Personal",
+      "bg": "rgba(140, 109, 63, 0.18)",
+      "border": "#8c6d3f",
+      "text": "#8c6d3f"
+    },
+    {
+      "id": "c2",
+      "name": "Educación",
+      "bg": "rgba(58, 172, 110, 0.18)",
+      "border": "#3aac6e",
+      "text": "#165e36"
+    },
+    {
+      "id": "c3",
+      "name": "Trabajo",
+      "bg": "rgba(58, 128, 212, 0.18)",
+      "border": "#3a80d4",
+      "text": "#0d3e7a"
+    },
+    {
+      "id": "c4",
+      "name": "Viajes",
+      "bg": "rgba(108, 116, 212, 0.18)",
+      "border": "#6c74d4",
+      "text": "#2d3480"
+    },
+    {
+      "id": "c5",
+      "name": "Salud",
+      "bg": "rgba(212, 64, 64, 0.18)",
+      "border": "#d44040",
+      "text": "#7a1010"
+    }
+  ],
+  "events": {
+    "1990": [
+      { "text": "Nací en marzo", "catId": "c1" }
+    ],
+    "1995": [
+      { "text": "Empecé el colegio", "catId": "c2" }
+    ],
+    "2000": [
+      { "text": "Aprendí a andar en bicicleta", "catId": "c1" },
+      { "text": "Viaje familiar a la playa", "catId": "c4" }
+    ],
+    "2005": [
+      { "text": "Mi primer teléfono móvil", "catId": "c1" }
+    ],
+    "2008": [
+      { "text": "Graduado de la secundaria", "catId": "c2" },
+      { "text": "Viaje de graduación", "catId": "c4" }
+    ],
+    "2009": [
+      { "text": "Ingresé a la universidad", "catId": "c2" },
+      { "text": "Carrera: Ingeniería", "catId": "c2" }
+    ],
+    "2010": [
+      { "text": "Primer trabajo de medio tiempo", "catId": "c3" }
+    ],
+    "2013": [
+      { "text": "Graduación universitaria", "catId": "c2" },
+      { "text": "Mi primer auto", "catId": "c1" }
+    ],
+    "2014": [
+      { "text": "Primer empleo formal", "catId": "c3" }
+    ],
+    "2015": [
+      { "text": "Viaje a Europa", "catId": "c4" },
+      { "text": "Visité 5 países", "catId": "c4" }
+    ],
+    "2016": [
+      { "text": "Promoción en el trabajo", "catId": "c3" },
+      { "text": "Me mudé a un apartamento", "catId": "c1" }
+    ],
+    "2017": [
+      { "text": "Comencé a hacer ejercicio", "catId": "c5" }
+    ],
+    "2018": [
+      { "text": "Viaje a Japón", "catId": "c4" },
+      { "text": "Conferencia de tecnología", "catId": "c2" }
+    ],
+    "2019": [
+      { "text": "Certificación profesional", "catId": "c2" },
+      { "text": "Nuevo rol como líder", "catId": "c3" }
+    ],
+    "2020": [
+      { "text": "Pandemia COVID-19", "catId": "c5" },
+      { "text": "Trabajo remoto", "catId": "c3" }
+    ],
+    "2021": [
+      { "text": "Vacuna contra COVID", "catId": "c5" },
+      { "text": "Proyecto importante en el trabajo", "catId": "c3" }
+    ],
+    "2022": [
+      { "text": "Viaje a Estados Unidos", "catId": "c4" },
+      { "text": "Reuniones presenciales", "catId": "c3" }
+    ],
+    "2023": [
+      { "text": "Compra de vivienda", "catId": "c1" },
+      { "text": "Premio al mejor desempeño", "catId": "c3" }
+    ],
+    "2024": [
+      { "text": "Lanzamiento de proyecto propio", "catId": "c3" },
+      { "text": "Maratón completado", "catId": "c5" }
+    ],
+    "2025": [
+      { "text": "Viaje alrededor del mundo", "catId": "c4" },
+      { "text": "Meta de ahorro alcanzada", "catId": "c1" }
+    ]
+  }
+}

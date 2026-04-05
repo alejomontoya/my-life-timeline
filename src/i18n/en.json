@@ -1,0 +1,81 @@
+{
+  "app": {
+    "title": "My life timeline",
+    "subtitleNoEvents": "{{start}} – {{end}} · Click + to start",
+    "event_one": "{{count}} event",
+    "event_other": "{{count}} events",
+    "subtitleWithEvents": "{{count}} · {{start}} – {{end}}"
+  },
+  "header": {
+    "yearRange": "Range",
+    "actions": "Actions",
+    "export": "Export",
+    "exportPDF": "Export to PDF",
+    "exportData": "Export data",
+    "import": "Import data",
+    "importData": "Import data",
+    "seeExample": "See example",
+    "clearAll": "Clear all",
+    "language": "Language"
+  },
+  "config": {
+    "title": "Year range",
+    "from": "From",
+    "to": "To",
+    "cancel": "Cancel",
+    "apply": "Apply"
+  },
+  "modal": {
+    "newEvent": "New event",
+    "editEvent": "Edit event",
+    "eventPlaceholder": "What happened this year?",
+    "category": "Category",
+    "noCategory": "No category",
+    "newCategory": "New category…",
+    "create": "Create",
+    "cancel": "Cancel",
+    "addEvent": "Add event",
+    "save": "Save"
+  },
+  "empty": {
+    "title": "Your life timeline awaits",
+    "text": "Start recording the important moments of your life.\nEach event is a point in your personal story.",
+    "addFirst": "Add my first event",
+    "seeExample": "See example",
+    "hint": "Or click any + button on the timeline"
+  },
+  "pdf": {
+    "title": "Export to PDF",
+    "subtitle": "8 years per page in vertical format",
+    "preview": "Preview",
+    "cancel": "Cancel",
+    "export": "Download PDF",
+    "exporting": "Exporting..."
+  },
+  "legend": {
+    "categories": "Categories:"
+  },
+  "confirm": {
+    "clearAll": "Delete all timeline data?",
+    "clearAllTitle": "Clear all",
+    "clearAllMessage": "Are you sure you want to delete all your data? This action cannot be undone.",
+    "replaceData": "This will replace your current data. Continue?",
+    "loadExampleTitle": "Load example",
+    "loadExampleMessage": "Your current data will be replaced with the example. Continue?",
+    "invalidJSON": "Invalid JSON",
+    "loadError": "Could not load example",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "continue": "Continue",
+    "accept": "Accept"
+  },
+  "toast": {
+    "pdfError": "Error exporting PDF",
+    "importSuccess": "Data imported successfully",
+    "exampleLoaded": "Example loaded successfully",
+    "categoryExists": "A category with that name already exists",
+    "eventAdded": "Event added",
+    "eventSaved": "Changes saved",
+    "eventDeleted": "Event deleted"
+  }
+}
