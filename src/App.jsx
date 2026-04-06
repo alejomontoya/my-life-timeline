@@ -148,6 +148,30 @@ export default function LifeTimeline() {
     }));
   };
 
+  const deleteCategory = async (catId) => {
+    const result = await confirm({
+      title: t("confirm.deleteCategoryTitle"),
+      message: t("confirm.deleteCategoryMessage"),
+      type: "danger",
+      confirmText: t("confirm.delete"),
+      cancelText: t("confirm.cancel"),
+    });
+
+    if (result) {
+      setCategories((prev) => prev.filter((c) => c.id !== catId));
+      setEvents((prev) => {
+        const updated = {};
+        Object.keys(prev).forEach((year) => {
+          updated[year] = prev[year].map((e) =>
+            e.catId === catId ? { ...e, catId: null } : e
+          );
+        });
+        return updated;
+      });
+      showToast(t("toast.categoryDeleted"), "success");
+    }
+  };
+
   const createCategory = (name, color) => {
     if (categories.find((c) => c.name.toLowerCase() === name.toLowerCase())) {
       showToast(t("toast.categoryExists"), "error");
@@ -239,6 +263,7 @@ export default function LifeTimeline() {
         onClose={closeModal}
         onSave={saveEvent}
         onCreateCategory={createCategory}
+        onDeleteCategory={deleteCategory}
       />
 
       <CategoryModal
@@ -246,6 +271,7 @@ export default function LifeTimeline() {
         onClose={() => setCategoryModalOpen(false)}
         categories={categories}
         onCreateCategory={createCategory}
+        onDeleteCategory={deleteCategory}
       />
 
       <ConfigModal

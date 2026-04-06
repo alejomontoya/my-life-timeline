@@ -75,7 +75,9 @@
     "cancel": "Cancel",
     "delete": "Delete",
     "continue": "Continue",
-    "accept": "Accept"
+    "accept": "Accept",
+    "deleteCategoryTitle": "Delete category",
+    "deleteCategoryMessage": "Delete this category? Associated events will lose their category."
   },
   "toast": {
     "pdfError": "Error exporting PDF",
@@ -84,7 +86,8 @@
     "categoryExists": "A category with that name already exists",
     "eventAdded": "Event added",
     "eventSaved": "Changes saved",
-    "eventDeleted": "Event deleted"
+    "eventDeleted": "Event deleted",
+    "categoryDeleted": "Category deleted"
   },
   "footer": {
     "madeWith": "Made with love",

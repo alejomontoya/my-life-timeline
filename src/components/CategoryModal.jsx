@@ -6,6 +6,7 @@ export default function CategoryModal({
   onClose,
   categories,
   onCreateCategory,
+  onDeleteCategory,
 }) {
   const { t } = useTranslation();
   const [newCatName, setNewCatName] = useState("");
@@ -55,6 +56,15 @@ export default function CategoryModal({
                   }}
                 >
                   {cat.name}
+                  <button
+                    className="lt-cat-del"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      onDeleteCategory(cat.id);
+                    }}
+                  >
+                    ×
+                  </button>
                 </span>
               ))
             )}

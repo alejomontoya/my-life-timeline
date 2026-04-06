@@ -909,6 +909,20 @@
 .lt-cat-chip.selected {
   box-shadow: 0 0 0 2px rgba(140, 109, 63, 0.35);
 }
+.lt-cat-del {
+  margin-left: 4px;
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 1;
+  opacity: 0.6;
+  padding: 0 2px;
+}
+.lt-cat-del:hover {
+  opacity: 1;
+}
 
 .lt-new-cat-row {
   display: flex;

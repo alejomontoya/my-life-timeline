@@ -17,6 +17,7 @@ export default function EventModal({
   onClose,
   onSave,
   onCreateCategory,
+  onDeleteCategory,
 }) {
   const { t } = useTranslation();
   const [newCatName, setNewCatName] = useState("");
@@ -91,6 +92,15 @@ export default function EventModal({
                 onClick={() => setSelCatId(cat.id)}
               >
                 {cat.name}
+                <button
+                  className="lt-cat-del"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    onDeleteCategory(cat.id);
+                  }}
+                >
+                  ×
+                </button>
               </span>
             ))}
           </div>
