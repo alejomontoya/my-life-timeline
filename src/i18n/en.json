@@ -16,7 +16,9 @@
     "importData": "Import data",
     "seeExample": "See example",
     "clearAll": "Clear all",
-    "language": "Language"
+    "language": "Language",
+    "english": "English",
+    "spanish": "Spanish"
   },
   "config": {
     "title": "Year range",

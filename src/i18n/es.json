@@ -16,7 +16,9 @@
     "importData": "Importar datos",
     "seeExample": "Ver ejemplo",
     "clearAll": "Borrar todo",
-    "language": "Idioma"
+    "language": "Idioma",
+    "english": "Inglés",
+    "spanish": "Español"
   },
   "config": {
     "title": "Rango de años",
