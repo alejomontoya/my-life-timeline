@@ -8,6 +8,7 @@ import Header from "./components/Header";
 import Legend from "./components/Legend";
 import Timeline from "./components/Timeline";
 import EventModal from "./components/EventModal";
+import CategoryModal from "./components/CategoryModal";
 import ConfigModal from "./components/ConfigModal";
 import ExportPDFModal from "./components/ExportPDFModal";
 import EmptyState from "./components/EmptyState";
@@ -34,6 +35,7 @@ export default function LifeTimeline() {
 
   const [modal, setModal] = useState(null);
   const [configOpen, setConfigOpen] = useState(false);
+  const [categoryModalOpen, setCategoryModalOpen] = useState(false);
   const [pdfExportOpen, setPdfExportOpen] = useState(false);
 
   const getCategory = (id) => categories.find((c) => c.id === id);
@@ -178,6 +180,7 @@ export default function LifeTimeline() {
         yearEnd={yearEnd}
         total={total}
         onOpenConfig={() => setConfigOpen(true)}
+        onOpenCategories={() => setCategoryModalOpen(true)}
         onExport={exportData}
         onImport={importData}
         onLoadExample={loadExample}
@@ -235,6 +238,13 @@ export default function LifeTimeline() {
         categories={categories}
         onClose={closeModal}
         onSave={saveEvent}
+        onCreateCategory={createCategory}
+      />
+
+      <CategoryModal
+        isOpen={categoryModalOpen}
+        onClose={() => setCategoryModalOpen(false)}
+        categories={categories}
         onCreateCategory={createCategory}
       />
 

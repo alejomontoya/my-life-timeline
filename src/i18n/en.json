@@ -37,7 +37,13 @@
     "create": "Create",
     "cancel": "Cancel",
     "addEvent": "Add event",
-    "save": "Save"
+    "save": "Save",
+    "close": "Close",
+    "existingCategories": "Existing categories",
+    "noCategories": "No categories yet",
+    "createNewCategory": "Create new category",
+    "categoryNamePlaceholder": "Category name",
+    "manageCategories": "Manage categories"
   },
   "empty": {
     "title": "Your life timeline awaits",

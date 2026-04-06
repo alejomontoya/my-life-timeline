@@ -37,7 +37,13 @@
     "create": "Crear",
     "cancel": "Cancelar",
     "addEvent": "Añadir evento",
-    "save": "Guardar"
+    "save": "Guardar",
+    "close": "Cerrar",
+    "existingCategories": "Categorías existentes",
+    "noCategories": "No hay categorías aún",
+    "createNewCategory": "Crear nueva categoría",
+    "categoryNamePlaceholder": "Nombre de la categoría",
+    "manageCategories": "Gestionar categorías"
   },
   "empty": {
     "title": "Tu línea de vida te espera",
