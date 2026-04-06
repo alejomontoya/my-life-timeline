@@ -21,13 +21,17 @@ export default function LifeTimeline() {
   const { modalState, confirm } = useConfirm();
   const { toastState, showToast, hideToast } = useToast();
 
-  const [yearStart, setYearStart] = useState(2000);
-  const [yearEnd, setYearEnd] = useState(2026);
+  const [yearStart, setYearStart] = useLocalStorage(
+    "lifeTimelineYearStart",
+    2000
+  );
+  const [yearEnd, setYearEnd] = useLocalStorage("lifeTimelineYearEnd", 2026);
   const [events, setEvents] = useLocalStorage("lifeTimelineEvents", {});
   const [categories, setCategories] = useLocalStorage(
     "lifeTimelineCategories",
     []
   );
+
   const [modal, setModal] = useState(null);
   const [configOpen, setConfigOpen] = useState(false);
   const [pdfExportOpen, setPdfExportOpen] = useState(false);
